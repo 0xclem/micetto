@@ -1,0 +1,38 @@
+{
+  "name": "micetto",
+  "version": "0.0.0",
+  "description": "{\\rtf1\\ansi\\ansicpg1252\\cocoartf1343\\cocoasubrtf140 {\\fonttbl\\f0\\fswiss\\fcharset0 Helvetica;} {\\colortbl;\\red255\\green255\\blue255;} \\paperw11900\\paperh16840\\margl1440\\margr1440\\vieww10800\\viewh8400\\viewkind0 \\pard\\tx566\\tx1133\\tx1700\\tx2267\\tx2834\\tx3401\\tx3968\\tx4535\\tx5102\\tx5669\\tx6236\\tx6803\\pardirnatural",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.8.9"
+  },
+  "devDependencies": {
+    "connect": "^3.3.2",
+    "gulp": "^3.8.9",
+    "gulp-clean": "^0.3.1",
+    "gulp-coffee": "^2.2.0",
+    "gulp-concat": "^2.4.1",
+    "gulp-jade": "^0.9.0",
+    "gulp-livereload": "^2.1.1",
+    "gulp-load-plugins": "^0.7.1",
+    "gulp-notify": "^2.0.0",
+    "gulp-plumber": "^0.6.6",
+    "gulp-sass": "^1.2.2",
+    "gulp-serve": "^0.2.0",
+    "gulp-watch": "^1.1.0",
+    "run-sequence": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mencls/micetto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mencls/micetto/issues"
+  },
+  "homepage": "https://github.com/Mencls/micetto"
+}

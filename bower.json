@@ -1,0 +1,21 @@
+{
+  "name": "micetto",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Mencls/micetto",
+  "authors": [
+    "Clément BALESTRAT <clement.balestrat@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "compass-mixins": "~1.0.2",
+    "neat": "~1.7.0",
+    "bourbon": "~4.0.2"
+  }
+}

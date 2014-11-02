@@ -1,0 +1,6 @@
+body {
+  font-size: 15px;
+  font-weight: 400;
+  width: 100%; }
+  body * {
+    line-height: 1.5em; }
