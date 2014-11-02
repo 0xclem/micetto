@@ -6,7 +6,7 @@
 @import "compass-mixins/lib/compass/css3/transform";
 @import "compass-mixins/lib/compass/typography/lists/inline-list";
 @import "compass-mixins/lib/compass/typography/links/unstyled-link";
-// @import "bourbon/app/assets/stylesheets/bourbon";
+@import "bourbon/dist/bourbon";
 @import "neat/app/assets/stylesheets/neat";
 
 
@@ -15,7 +15,7 @@ body {
   font-family: Roboto;
   font-size: 12px;
 }
-
+$max-width: 100%;
 ::-webkit-input-placeholder { /* WebKit browsers */
     color:    #fff;
     font-family: 'Roboto';
@@ -82,6 +82,7 @@ header {
       width: 100%;
       color: #fff;
       font-size: 17px;
+      height: 47px;
       font-weight: 300;
       margin: 40px 0;
       vertical-align: middle;
@@ -93,12 +94,10 @@ header {
           display: block;
           float: left;
           padding: 15px;
+          & > a {text-decoration: none; color: #fff;}
           &.active {background-color: #be0f23;}
-          &.blue {background-color: #3b5691;}
-          & > .facebook-wrapper {
-            position: relative;
-            & > .fb {position: absolute; top: 0; left: 0;}
-          }
+          &.blue {background-color: #3b5691; height: 47px;}
+          &.element:not(.blue):hover {background-color: #be0f23;}
         }
         & > .chat {
           position: absolute;
@@ -109,3 +108,25 @@ header {
     }
   }
 }
+section {
+  width: 100%;
+  margin: 0 100px;
+  &.une {
+    & > .block-8 { @include span-columns(8); }
+    & > .block-4 { @include span-columns(4); }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

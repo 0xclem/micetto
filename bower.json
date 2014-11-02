@@ -15,7 +15,7 @@
   ],
   "dependencies": {
     "compass-mixins": "~1.0.2",
-    "neat": "~1.7.0",
-    "bourbon": "~4.0.2"
+    "neat": "1.5.1",
+    "bourbon": "3.2.3"
   }
 }
