@@ -128,7 +128,7 @@ header {
     font-size: 17px;
     height: 47px;
     font-weight: 300;
-    margin: 40px 0;
+    margin: 40px 0 30px 0;
     vertical-align: middle; }
     header > .row > .nav > .nav-inner {
       position: relative;
@@ -154,19 +154,60 @@ header {
         left: 5px; }
 
 section {
-  width: 100%;
-  margin: 0 100px; }
-  section.une > .block-8 {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%; }
-    section.une > .block-8:last-child {
-      margin-right: 0; }
-  section.une > .block-4 {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%; }
-    section.une > .block-4:last-child {
-      margin-right: 0; }
+  width: 1075px;
+  margin: 0 auto; }
+  section.une > .block {
+    float: left; }
+    section.une > .block.block-65 {
+      width: 70%; }
+    section.une > .block.block-30 {
+      width: 30%; }
+  section.une .block-title-area {
+    background-color: #be0f23;
+    color: #fff;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px; }
+    section.une .block-title-area > * {
+      display: inline-block; }
+    section.une .block-title-area > .block-title {
+      margin-left: 10px; }
+  section.une .news {
+    margin-top: 19px; }
+    section.une .news:after {
+      content: "";
+      display: table;
+      clear: both; }
+    section.une .news > * {
+      display: inline-block; }
+    section.une .news > .picture {
+      width: 20%; }
+    section.une .news > .text {
+      height: 52px;
+      vertical-align: top;
+      width: 70%;
+      margin: 0 10px;
+      border-bottom: 1px solid #d9d9d9; }
+      section.une .news > .text > .row {
+        margin-bottom: 10px; }
+        section.une .news > .text > .row > * {
+          display: inline-block; }
+        section.une .news > .text > .row > .title {
+          background-color: #be0f23;
+          color: #fff;
+          font-size: 12px;
+          font-weight: 300;
+          padding: 5px 10px; }
+        section.une .news > .text > .row > .date-block {
+          line-height: 20px;
+          float: right; }
+          section.une .news > .text > .row > .date-block > * {
+            display: inline-block; }
+          section.une .news > .text > .row > .date-block > .date-img {
+            vertical-align: middle; }
+          section.une .news > .text > .row > .date-block > .date {
+            color: #be0f23;
+            font-size: 13px;
+            margin-left: 5px;
+            vertical-align: middle; }
