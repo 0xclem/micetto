@@ -33,7 +33,7 @@ gulp.task "build-main-script", ->
 gulp.task "build-templates", ->
   gulp.src(GLOBS.templates)
     .pipe(plugins.plumber({errorHandler: plugins.notify.onError("Error: <%= error.message %>")}))
-    .pipe(plugins.jade())
+    .pipe(plugins.jade({pretty: true}))
     .pipe(gulp.dest(".tmp"))
 
 gulp.task "copy-fonts", ->
