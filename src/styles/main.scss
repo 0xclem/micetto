@@ -42,7 +42,7 @@ header {
   & > .row {
     @include clearfix;
     &.logo {margin: 0 100px;}
-    &.list-nav {width: 100%; background-color: black; margin: 45px 0; text-align: center;}
+    &.list-nav {width: 100%; text-align: center;}
     & img.logo {float: left; margin-left: 35px;}
     & .search-area {
       margin-top: 40px;
@@ -78,20 +78,33 @@ header {
       }
     }
     & > .nav {
-      display: inline-block;
-      margin: 0 100px;
       background-color: black;
+      width: 100%;
       color: #fff;
       font-size: 17px;
       font-weight: 300;
-      // text-align: center;
+      margin: 40px 0;
       vertical-align: middle;
-      & .element {
-        text-transform: uppercase;
-        display: block;
-        float: left;
-        padding: 15px;
-        &.active {background-color: #be0f23;}
+      & > .nav-inner {
+        position: relative;
+        display: inline-block;
+        & .element {
+          text-transform: uppercase;
+          display: block;
+          float: left;
+          padding: 15px;
+          &.active {background-color: #be0f23;}
+          &.blue {background-color: #3b5691;}
+          & > .facebook-wrapper {
+            position: relative;
+            & > .fb {position: absolute; top: 0; left: 0;}
+          }
+        }
+        & > .chat {
+          position: absolute;
+          top: -30px;
+          left: 5px; 
+        }
       }
     }
   }
