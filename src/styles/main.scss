@@ -111,6 +111,7 @@ header {
 section {
   width: 1075px;
   margin: 0 auto;
+  @include clearfix;
   &.une {
     & > .block {
       float: left;
@@ -157,6 +158,12 @@ section {
         }
       }
     }
+  }
+  &.slogan {
+    margin-top: 35px;
+    text-align: center;
+    & > h1 {font-size: 35px; margin-bottom: 20px;}
+    & > h3 {font-size: 18px; font-weight: 300;}
   }
 }
 

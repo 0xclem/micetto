@@ -156,6 +156,10 @@ header {
 section {
   width: 1075px;
   margin: 0 auto; }
+  section:after {
+    content: "";
+    display: table;
+    clear: both; }
   section.une > .block {
     float: left; }
     section.une > .block.block-65 {
@@ -211,3 +215,12 @@ section {
             font-size: 13px;
             margin-left: 5px;
             vertical-align: middle; }
+  section.slogan {
+    margin-top: 35px;
+    text-align: center; }
+    section.slogan > h1 {
+      font-size: 35px;
+      margin-bottom: 20px; }
+    section.slogan > h3 {
+      font-size: 18px;
+      font-weight: 300; }
