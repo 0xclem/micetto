@@ -4,13 +4,8 @@ runSequence = require "run-sequence"
 
 GLOBS =
   templates: 'src/pages/**/*.jade'
-  # scripts:
-  #   vendors: ['src/bower_components/jquery/dist/jquery.min.js', 'src/bower_components/readmore/readmore.min.js']
-    # main: 'src/scripts/script.coffee'
   styles: 'src/styles/main.scss'
-  # fonts: ['src/fonts/**/*.*', 'src/bower_components/font-awesome/fonts/*']
   images: 'src/images/**/*.*'
-  # docs: 'src/docs/**/*.*'
 
 gulp.task "build-main-style", ->
   gulp.src(GLOBS.styles)
@@ -51,12 +46,8 @@ gulp.task "copy-docs", ->
 gulp.task "watch", ->
   plugins.livereload.listen()
   gulp.watch GLOBS.styles, ["build-main-style"]
-  # gulp.watch GLOBS.scripts.vendors, ["build-vendor-script"]
-  # gulp.watch GLOBS.scripts.main, ["build-main-script"]
   gulp.watch GLOBS.templates, ["build-templates"]
-  # gulp.watch GLOBS.fonts, ["copy-fonts"]
   gulp.watch GLOBS.images, ["copy-images"]
-  # gulp.watch GLOBS.docs, ["copy-docs"]
   gulp.watch(".tmp/**/*").on("change", -> plugins.livereload.changed())
 
 gulp.task "clean-dist", -> gulp.src(".tmp/*", read: false).pipe(plugins.clean())

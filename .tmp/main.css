@@ -45,9 +45,104 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
 body {
-  font-size: 15px;
-  font-weight: 400;
-  width: 100%; }
-  body * {
-    line-height: 1.5em; }
+  width: 100%;
+  font-family: Roboto;
+  font-size: 12px; }
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 12px; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 12px; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 12px; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 12px; }
+
+header {
+  margin-top: 10px; }
+  header > .row {
+    overflow: hidden;
+    *zoom: 1; }
+    header > .row.logo {
+      margin: 0 100px; }
+    header > .row.list-nav {
+      width: 100%;
+      background-color: black;
+      margin: 45px 0;
+      text-align: center; }
+    header > .row img.logo {
+      float: left;
+      margin-left: 35px; }
+    header > .row .search-area {
+      margin-top: 40px;
+      margin-right: 60px;
+      float: right; }
+      header > .row .search-area > .input-block {
+        float: left;
+        position: relative; }
+        header > .row .search-area > .input-block input[type=text] {
+          font-family: "Roboto";
+          font-size: 12px;
+          width: 220px;
+          height: 40px;
+          padding: 0px 10px;
+          border: none;
+          background-color: #be0f23;
+          color: #fff; }
+        header > .row .search-area > .input-block .chat {
+          position: absolute;
+          top: -30px;
+          left: 130px; }
+      header > .row .search-area > .icon-block {
+        float: left;
+        width: 50px;
+        height: 40px;
+        background-color: black;
+        background-image: url("images//loupe.png");
+        background-repeat: no-repeat;
+        background-position: center; }
+    header > .row > .nav {
+      display: inline-block;
+      margin: 0 100px;
+      background-color: black;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 300;
+      vertical-align: middle; }
+      header > .row > .nav .element {
+        text-transform: uppercase;
+        display: block;
+        float: left;
+        padding: 15px; }
+        header > .row > .nav .element.active {
+          background-color: #be0f23; }

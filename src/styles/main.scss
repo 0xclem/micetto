@@ -6,12 +6,93 @@
 @import "compass-mixins/lib/compass/css3/transform";
 @import "compass-mixins/lib/compass/typography/lists/inline-list";
 @import "compass-mixins/lib/compass/typography/links/unstyled-link";
-
+// @import "bourbon/app/assets/stylesheets/bourbon";
+@import "neat/app/assets/stylesheets/neat";
 
 
 body {
-  font-size: 15px;
-  font-weight: 400;
-  * { line-height: 1.5em; }
   width: 100%;
+  font-family: Roboto;
+  font-size: 12px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+    font-family: 'Roboto';
+    font-size: 12px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   font-family: 'Roboto';
+   font-size: 12px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   font-family: 'Roboto';
+   font-size: 12px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #fff;
+   font-family: 'Roboto';
+   font-size: 12px;
+}
+
+header {
+  margin-top: 10px;
+  & > .row {
+    @include clearfix;
+    &.logo {margin: 0 100px;}
+    &.list-nav {width: 100%; background-color: black; margin: 45px 0; text-align: center;}
+    & img.logo {float: left; margin-left: 35px;}
+    & .search-area {
+      margin-top: 40px;
+      margin-right: 60px;
+      float: right;
+      & > .input-block {
+        float: left;
+        position: relative;
+        & input[type=text] {
+          font-family: "Roboto";
+          font-size: 12px;
+          width: 220px;
+          height: 40px;
+          padding: 0px 10px;
+          border: none;
+          background-color: #be0f23;
+          color: #fff;
+        }
+        & .chat {
+          position: absolute;
+          top: -30px;
+          left: 130px;
+        }
+      }
+      & > .icon-block {
+        float: left;
+        width: 50px;
+        height: 40px;
+        background-color: black;
+        background-image: image-url("/loupe.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    & > .nav {
+      display: inline-block;
+      margin: 0 100px;
+      background-color: black;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 300;
+      // text-align: center;
+      vertical-align: middle;
+      & .element {
+        text-transform: uppercase;
+        display: block;
+        float: left;
+        padding: 15px;
+        &.active {background-color: #be0f23;}
+      }
+    }
+  }
 }

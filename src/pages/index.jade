@@ -1,5 +1,27 @@
 html
   head
     meta(charset="utf-8")
+    link(rel="stylesheet" href="/main.css")
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
   body
-    p coucou
+    header
+      .row.logo
+        img.logo(src="images/logo.png")
+        .search-area
+          .input-block
+            input(type='text', placeholder='Recherche personnalisée')
+            img.chat(src='images/chat_searchbox.png')
+          .icon-block
+      .row.list-nav
+        .nav
+          .element.active accueil
+          .element actualités
+          .element conseils
+          .element chroniques
+          .element races
+          .element histoires
+          .element vidéos
+          .element contact
+          .element newsletter
+          .element fb
+
