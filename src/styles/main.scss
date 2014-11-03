@@ -184,10 +184,32 @@ section {
         & > .post {
           display: inline-block; width: 30%;
           &.add-margin-left {margin-left: 50px;}
+          & > .img-area {
+            margin-bottom: 20px;
+            background-color: #f2f2f2;
+            & > .date-block {
+              padding: 5px 10px;
+              line-height: 20px;
+              & > * {display: inline-block;}
+              & > .date-img {vertical-align: middle;}
+              & > .date {color: #be0f23; font-size: 13px; margin-left: 5px; vertical-align: middle;}
+            }
+          }
+          & > .text-area {
+            & > h3 {text-transform: uppercase; margin-bottom: 20px; padding: 0 10px;}
+            & > p {margin-bottom: 15px; padding: 0 10px; line-height: 1.4em; color: darken(#b1b1b1, 20%);}
+            & > a {text-decoration: none; float: right; color: #454646;}
+          }
         }
       }
       
     }
+  }
+  &.actus {
+    text-align: center;
+    & > * {display: inline-block;}
+    & > img {margin-right: 10px; vertical-align: bottom;}
+    & > h2 {color: #be0f23; text-transform: uppercase; font-size: 14px;}
   }
 }
 
