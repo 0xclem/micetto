@@ -225,8 +225,7 @@ section {
       font-size: 18px;
       font-weight: 300; }
   section.last-news {
-    margin-top: 35px;
-    margin-bottom: 35px; }
+    margin-top: 35px; }
     section.last-news > .block-title {
       background-color: #be0f23;
       padding: 15px;
@@ -247,6 +246,7 @@ section {
           section.last-news > .last-news-inner > .row > .post.add-margin-left {
             margin-left: 50px; }
           section.last-news > .last-news-inner > .row > .post > .img-area {
+            position: relative;
             margin-bottom: 20px;
             background-color: #f2f2f2; }
             section.last-news > .last-news-inner > .row > .post > .img-area > .date-block {
@@ -261,6 +261,26 @@ section {
                 font-size: 13px;
                 margin-left: 5px;
                 vertical-align: middle; }
+            section.last-news > .last-news-inner > .row > .post > .img-area > .legend {
+              font-size: 14px;
+              padding: 8px; }
+            section.last-news > .last-news-inner > .row > .post > .img-area > .title-label {
+              background-color: #be0f23;
+              position: absolute;
+              top: 15px;
+              left: 0;
+              padding: 10px; }
+              section.last-news > .last-news-inner > .row > .post > .img-area > .title-label > * {
+                display: inline-block; }
+              section.last-news > .last-news-inner > .row > .post > .img-area > .title-label > img {
+                margin: 0 5px; }
+              section.last-news > .last-news-inner > .row > .post > .img-area > .title-label > h2 {
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 300; }
+          section.last-news > .last-news-inner > .row > .post > .text-area.border {
+            border-bottom: 1px solid #d9d9d9; }
           section.last-news > .last-news-inner > .row > .post > .text-area > h3 {
             text-transform: uppercase;
             margin-bottom: 20px;
@@ -274,7 +294,36 @@ section {
             text-decoration: none;
             float: right;
             color: #454646; }
+          section.last-news > .last-news-inner > .row > .post > .article-list {
+            margin-top: 15px; }
+            section.last-news > .last-news-inner > .row > .post > .article-list > * {
+              display: inline-block; }
+            section.last-news > .last-news-inner > .row > .post > .article-list > .picture-text-area {
+              vertical-align: top;
+              border-bottom: 1px solid #d9d9d9;
+              padding-left: 5px;
+              margin-left: 5px; }
+              section.last-news > .last-news-inner > .row > .post > .article-list > .picture-text-area > h6 {
+                font-weight: 400;
+                padding: 10px 0; }
+              section.last-news > .last-news-inner > .row > .post > .article-list > .picture-text-area > p {
+                color: #7e7e7e;
+                padding: 0 0 8px 0; }
+          section.last-news > .last-news-inner > .row > .post > .more {
+            cursor: pointer;
+            text-align: center;
+            margin-top: 15px; }
+            section.last-news > .last-news-inner > .row > .post > .more > * {
+              display: inline-block; }
+            section.last-news > .last-news-inner > .row > .post > .more > img {
+              margin-right: 10px;
+              vertical-align: bottom; }
+            section.last-news > .last-news-inner > .row > .post > .more > h2 {
+              color: #be0f23;
+              text-transform: uppercase;
+              font-size: 14px; }
   section.actus {
+    cursor: pointer;
     text-align: center; }
     section.actus > * {
       display: inline-block; }
