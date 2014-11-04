@@ -37,6 +37,7 @@ $max-width: 100%;
    font-size: 12px;
 }
 
+a {text-decoration: none;}
 header {
   margin-top: 10px;
   & > .row {
@@ -340,7 +341,71 @@ section {
   & > * {display: inline-block;}
   & > img {margin-right: 5px; vertical-align: bottom;}
   & > h2 {color: #be0f23; text-transform: uppercase; font-size: 14px;}
+}
+
+footer {
+  color: white;
+  background-color: black;
+  margin-top: 100px;
+  & p {line-height: 15px; &.margin {margin-bottom: 30px;}}
+  & h3 {font-size: 14px; text-transform: uppercase; margin-bottom: 10px;}
+  & .author {margin-top: 5px;}
+  & .infos {float: right; color: #fff; margin-top: 5px;}
+  & > .black {
+    padding: 50px 0;
+    position: relative;
+    & > img.cat {position: absolute; top: -24%; left: 0;}
+    & > .block-30 {
+      width: 30%;
+      float: left;
+      margin: 0 15px;
+      & > .fb {margin-top: 30px;}
+      & > .citation + .citation {margin-top: 50px;}
+      & > .logo {margin-bottom: 50px;}
+      & > .input-block {
+        float: left;
+        position: relative;
+        & input[type=text] {
+          font-family: "Roboto";
+          font-size: 12px;
+          width: 220px;
+          height: 40px;
+          padding: 0px 10px;
+          border: none;
+          background-color: #fff;
+          color: #fff;
+        }
       }
+      & > .icon-block {
+        background-color: #be0f23;
+        max-height: 40px;
+        padding: 15px 0;
+        text-align: center;
+        & > .text {
+          display: inline-block;
+          text-transform: uppercase;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  & > .red {
+    background-color: #be0f23;
+    padding: 15px 0;
+    text-align: left;
+    & > section {
+      & > ul {
+        width: 100%;
+        text-align: center;
+        @include inline-list;
+        & > li {
+          & > a {text-decoration: none; color: #fff;}
+        }
+        & > li + li:before {content: '-'; margin: 0 5px;}
+      }
+    }
+  }
+}
 
 
 

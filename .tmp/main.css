@@ -79,6 +79,9 @@ body {
   font-family: 'Roboto';
   font-size: 12px; }
 
+a {
+  text-decoration: none; }
+
 header {
   margin-top: 10px; }
   header > .row:after {
@@ -475,3 +478,78 @@ section {
     color: #be0f23;
     text-transform: uppercase;
     font-size: 14px; }
+
+footer {
+  color: white;
+  background-color: black;
+  margin-top: 100px; }
+  footer p {
+    line-height: 15px; }
+    footer p.margin {
+      margin-bottom: 30px; }
+  footer h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  footer .author {
+    margin-top: 5px; }
+  footer .infos {
+    float: right;
+    color: #fff;
+    margin-top: 5px; }
+  footer > .black {
+    padding: 50px 0;
+    position: relative; }
+    footer > .black > img.cat {
+      position: absolute;
+      top: -24%;
+      left: 0; }
+    footer > .black > .block-30 {
+      width: 30%;
+      float: left;
+      margin: 0 15px; }
+      footer > .black > .block-30 > .fb {
+        margin-top: 30px; }
+      footer > .black > .block-30 > .citation + .citation {
+        margin-top: 50px; }
+      footer > .black > .block-30 > .logo {
+        margin-bottom: 50px; }
+      footer > .black > .block-30 > .input-block {
+        float: left;
+        position: relative; }
+        footer > .black > .block-30 > .input-block input[type=text] {
+          font-family: "Roboto";
+          font-size: 12px;
+          width: 220px;
+          height: 40px;
+          padding: 0px 10px;
+          border: none;
+          background-color: #fff;
+          color: #fff; }
+      footer > .black > .block-30 > .icon-block {
+        background-color: #be0f23;
+        max-height: 40px;
+        padding: 15px 0;
+        text-align: center; }
+        footer > .black > .block-30 > .icon-block > .text {
+          display: inline-block;
+          text-transform: uppercase;
+          font-weight: 300; }
+  footer > .red {
+    background-color: #be0f23;
+    padding: 15px 0;
+    text-align: left; }
+    footer > .red > section > ul {
+      width: 100%;
+      text-align: center;
+      list-style-type: none; }
+      footer > .red > section > ul, footer > .red > section > ul li {
+        margin: 0px;
+        padding: 0px;
+        display: inline; }
+      footer > .red > section > ul > li > a {
+        text-decoration: none;
+        color: #fff; }
+      footer > .red > section > ul > li + li:before {
+        content: '-';
+        margin: 0 5px; }
