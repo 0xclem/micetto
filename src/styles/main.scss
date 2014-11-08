@@ -123,6 +123,7 @@ section { width: 1075px; margin: 0 auto; @include clearfix;}
 .block {
   float: left;
   &.block-70 { width: 70%; }
+  &.block-65 { width: 65%; }
   &.block-30 { width: 30%; }
   &.block-100 { width: 100%; }
   &.right { float: right; }
@@ -172,6 +173,11 @@ section.last-news {
   }
 }
 
+section.videos {
+  & > .picture-grid {
+    & > .row { margin: 15px 0; } 
+  }
+}
 
 
 // -------------------- Elements ----------------------
@@ -215,12 +221,14 @@ ul.short-post-list {
   & > li.news-simple {
     margin-top: 15px;
     & > * {display: inline-block;}
-    & > .picture-text-area {
+    & > .picture { width: 20%;}
+    & > .text {
+      width: 70%;
+      margin: 0 10px;
       vertical-align: top;
       border-bottom: 1px solid #d9d9d9;
       padding-left: 5px;
-      margin-left: 5px;
-      & > h6 {font-weight: 400; padding: 10px 0;}
+      & > h6 {font-weight: 400; padding: 10px 0; &.only {padding: 20px 0;}}
       & > p {color: darken(#b1b1b1, 20%); padding: 0 0 8px 0;}
     }
   }
@@ -237,11 +245,13 @@ ul.short-post-list {
 .post {
   display: inline-block; width: 30%;
   &.add-margin-left {margin-left: 50px;}
+  &.add-margin-left-small {margin-left: 25px;}
   & > .img-area {
     position: relative;
     width: 319px;
     margin-bottom: 20px;
     background-color: #f2f2f2;
+    &.small {width: 224px;}
     & > .date-block {
       padding: 5px 10px;
       line-height: 20px;
