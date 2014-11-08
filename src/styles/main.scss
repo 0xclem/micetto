@@ -179,6 +179,11 @@ section.videos {
   }
 }
 
+section.advices {
+  & > .picture-grid {
+    & > .row { margin: 15px 0; } 
+  }
+}
 
 // -------------------- Elements ----------------------
 

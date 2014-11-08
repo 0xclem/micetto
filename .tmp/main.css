@@ -223,6 +223,9 @@ section.last-news {
 section.videos > .picture-grid > .row {
   margin: 15px 0; }
 
+section.advices > .picture-grid > .row {
+  margin: 15px 0; }
+
 .block-title-area {
   background-color: #be0f23;
   color: #fff;
