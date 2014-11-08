@@ -121,9 +121,11 @@ section { width: 1075px; margin: 0 auto; @include clearfix;}
 
 
 .block {
+  float: left;
   &.block-70 { width: 70%; }
   &.block-30 { width: 30%; }
   &.block-100 { width: 100%; }
+  &.right { float: right; }
 }
 
 
@@ -165,7 +167,7 @@ section.slogan {
 section.last-news {
   margin-top: 35px;
   & > .picture-grid {
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
     & > .row { margin-bottom: 40px; } 
   }
 }
@@ -186,7 +188,7 @@ section.last-news {
 }
 
 ul.short-post-list {
-  & .news {
+  & > li.news-pict {
     margin-top: 19px;
     @include clearfix;
     & > * {display: inline-block;}
@@ -210,6 +212,18 @@ ul.short-post-list {
       }
     }
   }
+  & > li.news-simple {
+    margin-top: 15px;
+    & > * {display: inline-block;}
+    & > .picture-text-area {
+      vertical-align: top;
+      border-bottom: 1px solid #d9d9d9;
+      padding-left: 5px;
+      margin-left: 5px;
+      & > h6 {font-weight: 400; padding: 10px 0;}
+      & > p {color: darken(#b1b1b1, 20%); padding: 0 0 8px 0;}
+    }
+  }
 }
 
 .date-block {
@@ -225,6 +239,7 @@ ul.short-post-list {
   &.add-margin-left {margin-left: 50px;}
   & > .img-area {
     position: relative;
+    width: 319px;
     margin-bottom: 20px;
     background-color: #f2f2f2;
     & > .date-block {
@@ -252,18 +267,6 @@ ul.short-post-list {
     & > p {margin-bottom: 15px; padding: 0 10px; line-height: 1.4em; color: darken(#b1b1b1, 20%);}
     & > a {text-decoration: none; float: right; color: #454646;}
   }
-  & > .article-list {
-    margin-top: 15px;
-    & > * {display: inline-block;}
-    & > .picture-text-area {
-      vertical-align: top;
-      border-bottom: 1px solid #d9d9d9;
-      padding-left: 5px;
-      margin-left: 5px;
-      & > h6 {font-weight: 400; padding: 10px 0;}
-      & > p {color: darken(#b1b1b1, 20%); padding: 0 0 8px 0;}
-    }
-  }
 }
 
 .more {
@@ -272,105 +275,9 @@ ul.short-post-list {
     & > * {display: inline-block;}
     & > img {margin-right: 10px; vertical-align: bottom;}
     & > h2 {color: #be0f23; text-transform: uppercase; font-size: 14px;}
+    &.add-margin-top {margin-top: 15px;}
   }
 
-
-
-
-
-
-section {
-  &.une, &.videos {
-    & > .block {
-      float: left;
-      &.block-55 { width: 65%; }
-      &.right {float: right;}
-    }
-    
-    
-    
-  }
-  &.last-news {
-    
-
-    & > .last-news-inner {
-      
-      
-      
-    }
-  }
-  // &.actus {
-  //   cursor: pointer;
-  //   text-align: center;
-  //   & > * {display: inline-block;}
-  //   & > img {margin-right: 10px; vertical-align: bottom;}
-  //   & > h2 {color: #be0f23; text-transform: uppercase; font-size: 14px;}
-  // }
-}
-
-.last-news-inner {
-  width: 100%;
-  margin: 20px auto;
-  & > .row {
-    margin-bottom: 40px;
-    &.small-margin-bottom {margin-bottom: 5px;}
-    & > .post {
-      display: inline-block; 
-      &.add-margin-left {margin-left: 50px;}
-      &.add-margin-left-small {margin-left: 10px;}
-      & > .img-area {
-        position: relative;
-        margin-bottom: 20px;
-        background-color: #f2f2f2;
-        & > .comment-block {
-          padding: 5px 10px;
-          line-height: 20px;
-          & > * {display: inline-block;}
-          & > .date-img {vertical-align: middle;}
-          & > .date {color: #be0f23; font-size: 13px; margin-left: 5px; vertical-align: middle;}
-          & > .comment {color: #be0f23; font-size: 13px; margin-left: 5px; vertical-align: middle;}
-        }
-        & > .legend {font-size: 14px; padding: 8px;}
-        & > .title-label {
-          background-color: #be0f23;
-          position: absolute;
-          top: 15px; 
-          left: 0;
-          padding: 10px; 
-          & > * {display: inline-block;}
-          & > img {margin: 0 5px;}
-          & > h2 {color: #fff; text-transform: uppercase; font-size: 16px; font-weight: 300;}
-        }
-      }
-      & > .text-area {
-        &.border{border-bottom: 1px solid #d9d9d9;}
-        & > h3 {text-transform: uppercase; margin-bottom: 20px; padding: 0 10px;}
-        & > p {margin-bottom: 15px; padding: 0 10px; line-height: 1.4em; color: darken(#b1b1b1, 20%);}
-        & > a {text-decoration: none; float: right; color: #454646;}
-      }
-      & > .article-list {
-        margin-top: 15px;
-        & > * {display: inline-block;}
-        & > .picture-text-area {
-          vertical-align: top;
-          border-bottom: 1px solid #d9d9d9;
-          padding-left: 5px;
-          margin-left: 5px;
-          & > h6 {font-weight: 400; padding: 10px 0;}
-          & > p {color: darken(#b1b1b1, 20%); padding: 0 0 8px 0;}
-        }
-      }
-      & > .more {
-        cursor: pointer;
-        text-align: center;
-        margin-top: 15px;
-        & > * {display: inline-block;}
-        & > img {margin-right: 10px; vertical-align: bottom;}
-        & > h2 {color: #be0f23; text-transform: uppercase; font-size: 14px;}
-      }
-    }
-  } 
-}
 
 footer {
   color: white;
