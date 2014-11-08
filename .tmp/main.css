@@ -391,27 +391,35 @@ footer {
     float: right;
     color: #fff;
     margin-top: 5px; }
-  footer > .black {
+  footer > .black-area {
+    width: 90%;
     padding: 50px 0;
+    margin: 0 auto;
     position: relative; }
-    footer > .black > img.cat {
+    footer > .black-area:after {
+      content: "";
+      display: table;
+      clear: both; }
+    footer > .black-area > img.cat {
       position: absolute;
       top: -24%;
       left: 0; }
-    footer > .black > .block-30 {
+    footer > .black-area > .block-30 {
       width: 30%;
       float: left;
-      margin: 0 15px; }
-      footer > .black > .block-30 > .fb {
+      margin: 0 20px; }
+      footer > .black-area > .block-30.center {
+        text-align: center; }
+      footer > .black-area > .block-30 > .fb {
         margin-top: 30px; }
-      footer > .black > .block-30 > .citation + .citation {
+      footer > .black-area > .block-30 > .citation + .citation {
         margin-top: 50px; }
-      footer > .black > .block-30 > .logo {
+      footer > .black-area > .block-30 > .logo {
         margin-bottom: 50px; }
-      footer > .black > .block-30 > .input-block {
+      footer > .black-area > .block-30 > .input-block {
         float: left;
         position: relative; }
-        footer > .black > .block-30 > .input-block input[type=text] {
+        footer > .black-area > .block-30 > .input-block input[type=text] {
           font-family: "Roboto";
           font-size: 12px;
           width: 220px;
@@ -420,30 +428,31 @@ footer {
           border: none;
           background-color: #fff;
           color: #fff; }
-      footer > .black > .block-30 > .icon-block {
+      footer > .black-area > .block-30 > .icon-block {
         background-color: #be0f23;
         max-height: 40px;
         padding: 15px 0;
         text-align: center; }
-        footer > .black > .block-30 > .icon-block > .text {
+        footer > .black-area > .block-30 > .icon-block > .text {
           display: inline-block;
           text-transform: uppercase;
           font-weight: 300; }
-  footer > .red {
+  footer > .red-area {
+    width: 100%;
     background-color: #be0f23;
-    padding: 15px 0;
-    text-align: left; }
-    footer > .red > section > ul {
-      width: 100%;
-      text-align: center;
-      list-style-type: none; }
-      footer > .red > section > ul, footer > .red > section > ul li {
-        margin: 0px;
-        padding: 0px;
-        display: inline; }
-      footer > .red > section > ul > li > a {
-        text-decoration: none;
-        color: #fff; }
-      footer > .red > section > ul > li + li:before {
-        content: '-';
-        margin: 0 5px; }
+    padding: 15px 50px; }
+    footer > .red-area > .block-90 {
+      margin: 0 auto; }
+      footer > .red-area > .block-90 > ul {
+        text-align: center;
+        list-style-type: none; }
+        footer > .red-area > .block-90 > ul, footer > .red-area > .block-90 > ul li {
+          margin: 0px;
+          padding: 0px;
+          display: inline; }
+        footer > .red-area > .block-90 > ul > li > a {
+          text-decoration: none;
+          color: #fff; }
+        footer > .red-area > .block-90 > ul > li + li:before {
+          content: '-';
+          margin: 0 10px; }

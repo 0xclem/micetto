@@ -297,14 +297,18 @@ footer {
   & h3 {font-size: 14px; text-transform: uppercase; margin-bottom: 10px;}
   & .author {margin-top: 5px;}
   & .infos {float: right; color: #fff; margin-top: 5px;}
-  & > .black {
+  & > .black-area {
+    width: 90%;
     padding: 50px 0;
+    margin: 0 auto;
     position: relative;
+    @include clearfix;
     & > img.cat {position: absolute; top: -24%; left: 0;}
     & > .block-30 {
       width: 30%;
       float: left;
-      margin: 0 15px;
+      margin: 0 20px;
+      &.center {text-align: center;}
       & > .fb {margin-top: 30px;}
       & > .citation + .citation {margin-top: 50px;}
       & > .logo {margin-bottom: 50px;}
@@ -335,19 +339,17 @@ footer {
       }
     }
   }
-  & > .red {
+  & > .red-area {
+    width: 100%;
     background-color: #be0f23;
-    padding: 15px 0;
-    text-align: left;
-    & > section {
+    padding: 15px 50px;
+    & > .block-90 {
+      margin: 0 auto;
       & > ul {
-        width: 100%;
         text-align: center;
         @include inline-list;
-        & > li {
-          & > a {text-decoration: none; color: #fff;}
-        }
-        & > li + li:before {content: '-'; margin: 0 5px;}
+        & > li { & > a {text-decoration: none; color: #fff;}}
+        & > li + li:before {content: '-'; margin: 0 10px;}
       }
     }
   }
