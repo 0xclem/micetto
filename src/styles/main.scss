@@ -10,6 +10,8 @@
 @import "neat/app/assets/stylesheets/neat";
 
 
+//  -------------------- General settings -----------------------------
+
 body {
   width: 100%;
   font-family: Roboto;
@@ -38,6 +40,9 @@ $max-width: 100%;
 }
 
 a {text-decoration: none;}
+
+// ------------------ Header --------------------
+
 header {
   margin-top: 10px;
   & > .row {
@@ -109,165 +114,198 @@ header {
     }
   }
 }
-section {
-  width: 1075px;
-  margin: 0 auto;
-  @include clearfix;
-  &.une, &.videos {
-    & > .block {
-      float: left;
-      &.block-65 { width: 70%; }
-      &.block-55 { width: 65%; }
-      &.block-30 { width: 30%; }
-      &.right {float: right;}
+
+// --------------------- Page's grid layout config --------------------------
+
+section { width: 1075px; margin: 0 auto; @include clearfix;}
+
+
+.block {
+  &.block-70 { width: 70%; }
+  &.block-30 { width: 30%; }
+  &.block-100 { width: 100%; }
+}
+
+
+
+
+// ------------------- Page's sections ----------------------
+
+section.une {
+  & > .main-picture {
+    position: relative;
+    & > .caret {
+      position: absolute;
+      &.left {top: 40%; left: -4%;}
+      &.right {top: 40%; left: 89%;}
     }
-    & .main-picture {
-      position: relative;
-      & > .caret {
-        position: absolute;
-        &.left {top: 40%; left: -4%;}
-        &.right {top: 40%; left: 89%;}
-      }
-      & > .img-legend {
-        background-color: black;
-        position: absolute;
-        opacity: 0.6;
-        filter:alpha(opacity=60); 
-        width: 702px; 
-        top: 85%; left: 0;
-        color: #fff;
-        font-weight: 300;
-        font-size: 18px;
-        text-transform: uppercase;
-        & > h2 {opacity: 1; padding: 16px;}
-      }
-    }
-    & .block-title-area {
-      & > * {display: inline-block;}
-      background-color: #be0f23;
+    & > .img-legend {
+      background-color: black;
+      position: absolute;
+      opacity: 0.6;
+      filter:alpha(opacity=60); 
+      width: 702px; 
+      top: 85%; left: 0;
       color: #fff;
-      padding: 15px;
-      text-transform: uppercase;
       font-weight: 300;
-      font-size: 16px;
-      & > .block-title { margin-left: 10px;}
+      font-size: 18px;
+      text-transform: uppercase;
+      & > h2 {opacity: 1; padding: 16px;}
     }
-    & .news {
-      margin-top: 19px;
-      @include clearfix;
-      & > * {display: inline-block;}
-      & > .picture {width: 20%;}
-      & > .text {
-        height: 52px;
-        vertical-align: top;
-        width: 70%;
-        margin: 0 10px;
-        border-bottom: 1px solid #d9d9d9;
-        & > .row {
-          margin-bottom: 10px;
-          &.center {line-height: 50px;}
-          & > * {display: inline-block;}
-          & > .title {
-            background-color: #be0f23; color: #fff;
-            font-size: 12px;
-            font-weight: 300;
-            padding: 5px 10px;
-          }
-          & > .date-block {
-            line-height: 20px;
-            float: right;
-            & > * {display: inline-block;}
-            & > .date-img {vertical-align: middle;}
-            & > .date {color: #be0f23; font-size: 13px; margin-left: 5px; vertical-align: middle;}
-          }
+  }
+}
+
+section.slogan {
+  margin-top: 35px;
+  text-align: center;
+  & > h1 {font-size: 35px; margin-bottom: 20px;}
+  & > h3 {font-size: 18px; font-weight: 300;}
+}
+
+section.last-news {
+  margin-top: 35px;
+  & > .picture-grid {
+    margin: 20px auto;
+    & > .row { margin-bottom: 40px; } 
+  }
+}
+
+
+
+// -------------------- Elements ----------------------
+
+.block-title-area {
+  & > * {display: inline-block;}
+  background-color: #be0f23;
+  color: #fff;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+  & > .block-title { margin-left: 10px;}
+}
+
+ul.short-post-list {
+  & .news {
+    margin-top: 19px;
+    @include clearfix;
+    & > * {display: inline-block;}
+    & > .picture {width: 20%;}
+    & > .text {
+      height: 52px;
+      vertical-align: top;
+      width: 70%;
+      margin: 0 10px;
+      border-bottom: 1px solid #d9d9d9;
+      & > .row {
+        margin-bottom: 10px;
+        &.center {line-height: 50px;}
+        & > * {display: inline-block;}
+        & > .title {
+          background-color: #be0f23; color: #fff;
+          font-size: 12px;
+          font-weight: 300;
+          padding: 5px 10px;
         }
       }
     }
   }
-  &.slogan {
-    margin-top: 35px;
-    text-align: center;
-    & > h1 {font-size: 35px; margin-bottom: 20px;}
-    & > h3 {font-size: 18px; font-weight: 300;}
-  }
-  &.last-news {
-    margin-top: 35px;
-    & > .block-title {
+}
+
+.date-block {
+  line-height: 20px;
+  & > * {display: inline-block;}
+  & > .date-img {vertical-align: middle;}
+  & > .date {color: #be0f23; font-size: 13px; margin-left: 5px; vertical-align: middle;}
+  &.right { float: right; }
+}
+
+.post {
+  display: inline-block; width: 30%;
+  &.add-margin-left {margin-left: 50px;}
+  & > .img-area {
+    position: relative;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    & > .date-block {
+      padding: 5px 10px;
+      line-height: 20px;
+      & > * {display: inline-block;}
+      & > .date-img {vertical-align: middle;}
+      & > .date {color: #be0f23; font-size: 13px; margin-left: 5px; vertical-align: middle;}
+    }
+    & > .legend {font-size: 14px; padding: 8px;}
+    & > .title-label {
       background-color: #be0f23;
-      padding: 15px;
-      color: #fff;
-      text-transform: uppercase;
-      font-weight: 300; font-size: 16px;
-      & > img {padding: 0 10px 0 5px;}
-    }
-    & > .last-news-inner {
-      width: 100%;
-      margin: 20px auto;
-      & > .row {
-        margin-bottom: 40px;
-        & > .post {
-          display: inline-block; width: 30%;
-          &.add-margin-left {margin-left: 50px;}
-          & > .img-area {
-            position: relative;
-            margin-bottom: 20px;
-            background-color: #f2f2f2;
-            & > .date-block {
-              padding: 5px 10px;
-              line-height: 20px;
-              & > * {display: inline-block;}
-              & > .date-img {vertical-align: middle;}
-              & > .date {color: #be0f23; font-size: 13px; margin-left: 5px; vertical-align: middle;}
-            }
-            & > .legend {font-size: 14px; padding: 8px;}
-            & > .title-label {
-              background-color: #be0f23;
-              position: absolute;
-              top: 15px; 
-              left: 0;
-              padding: 10px; 
-              & > * {display: inline-block;}
-              & > img {margin: 0 5px;}
-              & > h2 {color: #fff; text-transform: uppercase; font-size: 16px; font-weight: 300;}
-            }
-          }
-          & > .text-area {
-            &.border{border-bottom: 1px solid #d9d9d9;}
-            & > h3 {text-transform: uppercase; margin-bottom: 20px; padding: 0 10px;}
-            & > p {margin-bottom: 15px; padding: 0 10px; line-height: 1.4em; color: darken(#b1b1b1, 20%);}
-            & > a {text-decoration: none; float: right; color: #454646;}
-          }
-          & > .article-list {
-            margin-top: 15px;
-            & > * {display: inline-block;}
-            & > .picture-text-area {
-              vertical-align: top;
-              border-bottom: 1px solid #d9d9d9;
-              padding-left: 5px;
-              margin-left: 5px;
-              & > h6 {font-weight: 400; padding: 10px 0;}
-              & > p {color: darken(#b1b1b1, 20%); padding: 0 0 8px 0;}
-            }
-          }
-          & > .more {
-            cursor: pointer;
-            text-align: center;
-            margin-top: 15px;
-            & > * {display: inline-block;}
-            & > img {margin-right: 10px; vertical-align: bottom;}
-            & > h2 {color: #be0f23; text-transform: uppercase; font-size: 14px;}
-          }
-        }
-      } 
+      position: absolute;
+      top: 15px; 
+      left: 0;
+      padding: 10px; 
+      & > * {display: inline-block;}
+      & > img {margin: 0 5px;}
+      & > h2 {color: #fff; text-transform: uppercase; font-size: 16px; font-weight: 300;}
     }
   }
-  &.actus {
+  & > .text-area {
+    &.border{border-bottom: 1px solid #d9d9d9;}
+    & > h3 {text-transform: uppercase; margin-bottom: 20px; padding: 0 10px;}
+    & > p {margin-bottom: 15px; padding: 0 10px; line-height: 1.4em; color: darken(#b1b1b1, 20%);}
+    & > a {text-decoration: none; float: right; color: #454646;}
+  }
+  & > .article-list {
+    margin-top: 15px;
+    & > * {display: inline-block;}
+    & > .picture-text-area {
+      vertical-align: top;
+      border-bottom: 1px solid #d9d9d9;
+      padding-left: 5px;
+      margin-left: 5px;
+      & > h6 {font-weight: 400; padding: 10px 0;}
+      & > p {color: darken(#b1b1b1, 20%); padding: 0 0 8px 0;}
+    }
+  }
+}
+
+.more {
     cursor: pointer;
     text-align: center;
     & > * {display: inline-block;}
     & > img {margin-right: 10px; vertical-align: bottom;}
     & > h2 {color: #be0f23; text-transform: uppercase; font-size: 14px;}
   }
+
+
+
+
+
+
+section {
+  &.une, &.videos {
+    & > .block {
+      float: left;
+      &.block-55 { width: 65%; }
+      &.right {float: right;}
+    }
+    
+    
+    
+  }
+  &.last-news {
+    
+
+    & > .last-news-inner {
+      
+      
+      
+    }
+  }
+  // &.actus {
+  //   cursor: pointer;
+  //   text-align: center;
+  //   & > * {display: inline-block;}
+  //   & > img {margin-right: 10px; vertical-align: bottom;}
+  //   & > h2 {color: #be0f23; text-transform: uppercase; font-size: 14px;}
+  // }
 }
 
 .last-news-inner {
@@ -332,15 +370,6 @@ section {
       }
     }
   } 
-}
-
-.more {
-  cursor: pointer;
-  text-align: center;
-  margin-top: 15px;
-  & > * {display: inline-block;}
-  & > img {margin-right: 5px; vertical-align: bottom;}
-  & > h2 {color: #be0f23; text-transform: uppercase; font-size: 14px;}
 }
 
 footer {

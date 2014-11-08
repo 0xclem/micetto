@@ -1,26 +1,27 @@
 html
   head
     meta(charset="utf-8")
-    link(rel="stylesheet" href="main.css")
+    link(rel="stylesheet" href="/main.css")
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
   body
     header
       .row.logo
-        img.logo(src="images/logo.png")
+        img.logo(src="/images/logo.png")
         .search-area
           .input-block
             input(type='text', placeholder='Recherche personnalisée')
-            img.chat(src='images/chat_searchbox.png')
+            img.chat(src='/images/chat_searchbox.png')
           .icon-block
       .row.list-nav
         .nav
           .nav-inner
             img.chat(src='images/chat_searchbox.png')
-            .element.active accueil
+            .element.active
+              a(href="/") accueil
             .element
-              a(href='#') actualités
+              a(href='/article') actualités
             .element
-              a(href='#') conseils
+              a(href='/conseil') conseils
             .element
               a(href='#') chroniques
             .element
@@ -35,84 +36,85 @@ html
               a(href='#') newsletter
             .element.blue 
               a(href='#')
-                img(src='images/fb.png')
+                img(src='/images/fb.png')
 
     section.une
-      .block.block-65.main-picture
-        img(src="images/chat_big.png")
-        img.caret.left(src="images/caret-left.png")  
-        img.caret.right(src="images/caret-right.png")
+      .block.block-70.main-picture
+        img(src="/images/chat_big.png")
+        img.caret.left(src="/images/caret-left.png")  
+        img.caret.right(src="/images/caret-right.png")
         .img-legend
           h2 Exsistit autem hoc loco quaedam quaestio subdifficilis
-      .block.block-30
+      .block.block-30.small-section
         .block-title-area
-          img(src="images/puce.png")
+          img(src="/images/puce.png")
           .block-title les dernières mises en ligne
-        .news
-          .picture 
-            img(src="images/news-picture-1.png")
-          .text
-            .row
-              .title Conseils
-              .date-block
-                .date-img
-                  img(src="images/clock.png")
-                .date 08 Nov 2014
-            .row
-              .legend Exsistit autem hoc loco quaedam
-        .news
-          .picture 
-            img(src="images/news-picture-2.png")
-          .text
-            .row
-              .title Conseils
-              .date-block
-                .date-img
-                  img(src="images/clock.png")
-                .date 08 Nov 2014
-            .row
-              .legend Exsistit autem hoc loco quaedam
-        .news
-          .picture 
-            img(src="images/news-picture-3.png")
-          .text
-            .row
-              .title Conseils
-              .date-block
-                .date-img
-                  img(src="images/clock.png")
-                .date 08 Nov 2014
-            .row
-              .legend Exsistit autem hoc loco quaedam
-        .news
-          .picture 
-            img(src="images/news-picture-4.png")
-          .text
-            .row
-              .title Conseils
-              .date-block
-                .date-img
-                  img(src="images/clock.png")
-                .date 08 Nov 2014
-            .row
-              .legend Exsistit autem hoc loco quaedam
+        ul.short-post-list
+          li.news
+            .picture 
+              img(src="/images/news-picture-1.png")
+            .text
+              .row
+                .title Conseils
+                .date-block.right
+                  .date-img
+                    img(src="/images/clock.png")
+                  .date 08 Nov 2014
+              .row
+                .legend Exsistit autem hoc loco quaedam
+          li.news
+            .picture 
+              img(src="/images/news-picture-2.png")
+            .text
+              .row
+                .title Conseils
+                .date-block.right
+                  .date-img
+                    img(src="/images/clock.png")
+                  .date 08 Nov 2014
+              .row
+                .legend Exsistit autem hoc loco quaedam
+          li.news
+            .picture 
+              img(src="/images/news-picture-3.png")
+            .text
+              .row
+                .title Conseils
+                .date-block.right
+                  .date-img
+                    img(src="/images/clock.png")
+                  .date 08 Nov 2014
+              .row
+                .legend Exsistit autem hoc loco quaedam
+          li.news
+            .picture 
+              img(src="/images/news-picture-4.png")
+            .text
+              .row
+                .title Conseils
+                .date-block.right
+                  .date-img
+                    img(src="/images/clock.png")
+                  .date 08 Nov 2014
+              .row
+                .legend Exsistit autem hoc loco quaedam
 
     section.slogan
       h1 Notre vocation : partager la passion des chats
       h3 Sans préoccupation mercantile. Les faire mieux connaître pour les aimer plus. Offrir à nos visiteurs tout ce qu'il convient de savoir pour les rendre plus heureux et mieux communiquer avec eux sans tomber dans l'anthropomorphisme. 
 
     section.last-news
-      .block-title
-        img(src="images/puce.png")
-        | les dernières actualités
-      .last-news-inner
+      .block-title-area
+        img(src="/images/puce.png")
+        .block-title les dernières actualités
+      .block.block-100.picture-grid
         .row
           .post
             .img-area
-              img(src="images/last-news-pic-1.png")
+              img(src="/images/last-news-pic-1.png")
               .date-block
                 .date-img
-                  img(src="images/clock.png")
+                  img(src="/images/clock.png")
                 .date 08 Nov 2014
             .text-area
               h3 En Angleterre, un chat autorisé à rester en maison de retraite !
@@ -120,10 +122,10 @@ html
               a(href='#') Lire la suite
           .post.add-margin-left
             .img-area
-              img(src="images/last-news-pic-2.png")
+              img(src="/images/last-news-pic-2.png")
               .date-block
                 .date-img
-                  img(src="images/clock.png")
+                  img(src="/images/clock.png")
                 .date 08 Nov 2014
             .text-area
               h3 En Angleterre, un chat autorisé à rester en maison de retraite !
@@ -131,10 +133,10 @@ html
               a(href='#') Lire la suite
           .post.add-margin-left
             .img-area
-              img(src="images/last-news-pic-3.png")
+              img(src="/images/last-news-pic-3.png")
               .date-block
                 .date-img
-                  img(src="images/clock.png")
+                  img(src="/images/clock.png")
                 .date 08 Nov 2014
             .text-area
               h3 En Angleterre, un chat autorisé à rester en maison de retraite !
@@ -143,10 +145,10 @@ html
         .row
           .post
             .img-area
-              img(src="images/last-news-pic-4.png")
+              img(src="/images/last-news-pic-4.png")
               .date-block
                 .date-img
-                  img(src="images/clock.png")
+                  img(src="/images/clock.png")
                 .date 08 Nov 2014
             .text-area
               h3 En Angleterre, un chat autorisé à rester en maison de retraite !
@@ -154,10 +156,10 @@ html
               a(href='#') Lire la suite
           .post.add-margin-left
             .img-area
-              img(src="images/last-news-pic-5.png")
+              img(src="/images/last-news-pic-5.png")
               .date-block
                 .date-img
-                  img(src="images/clock.png")
+                  img(src="/images/clock.png")
                 .date 08 Nov 2014
             .text-area
               h3 En Angleterre, un chat autorisé à rester en maison de retraite !
@@ -165,10 +167,10 @@ html
               a(href='#') Lire la suite
           .post.add-margin-left
             .img-area
-              img(src="images/last-news-pic-6.png")
+              img(src="/images/last-news-pic-6.png")
               .date-block
                 .date-img
-                  img(src="images/clock.png")
+                  img(src="/images/clock.png")
                 .date 08 Nov 2014
             .text-area
               h3 En Angleterre, un chat autorisé à rester en maison de retraite !
@@ -176,189 +178,190 @@ html
               a(href='#') Lire la suite
     
     section.actus
-      img(src="images/more.png")
-      h2 d'actualités
+      .more
+        img(src="/images/more.png")
+        h2 d'actualités
 
     section.last-news
       .last-news-inner
         .row
           .post
             .img-area
-              img(src="images/last-news-pic-7.png")
+              img(src="/images/last-news-pic-7.png")
               .title-label
-                img(src="images/puce.png")
+                img(src="/images/puce.png")
                 h2 conseils
               .legend Pour adopter un chat ou un chaton
             .text-area.border
               p Vous envisagez d'adopter un chat ? Par nos conseils nous allons vous y aider...
             .article-list
-              img(src="images/list-picture-1.png")
+              img(src="/images/list-picture-1.png")
               .picture-text-area
                 h6 L'éduquer et le comprendre
                 p Illud tamen te ese admonitum volo...
             .article-list
-              img(src="images/list-picture-2.png")
+              img(src="/images/list-picture-2.png")
               .picture-text-area
                 h6 L'éduquer et le comprendre
                 p Illud tamen te ese admonitum volo...
             .article-list
-              img(src="images/list-picture-3.png")
+              img(src="/images/list-picture-3.png")
               .picture-text-area
                 h6 L'éduquer et le comprendre
                 p Illud tamen te ese admonitum volo...
             .article-list
-              img(src="images/list-picture-4.png")
+              img(src="/images/list-picture-4.png")
               .picture-text-area
                 h6 L'éduquer et le comprendre
                 p Illud tamen te ese admonitum volo...
             .more
-              img(src="images/more.png")
+              img(src="/images/more.png")
               h2 de conseils
           .post.add-margin-left
             .img-area
-              img(src="images/last-news-pic-8.png")
+              img(src="/images/last-news-pic-8.png")
               .title-label
-                img(src="images/puce.png")
+                img(src="/images/puce.png")
                 h2 races
               .legend Le chat Bombay
             .text-area.border
               p Contrairement à ce que son nom semblerait indiquer le Bombay nee provient pas d’Inde mais des Etats-Unis. ...
             .article-list
-              img(src="images/list-picture-1.png")
+              img(src="/images/list-picture-1.png")
               .picture-text-area
                 h6 L'éduquer et le comprendre
                 p Illud tamen te ese admonitum volo...
             .article-list
-              img(src="images/list-picture-2.png")
+              img(src="/images/list-picture-2.png")
               .picture-text-area
                 h6 L'éduquer et le comprendre
                 p Illud tamen te ese admonitum volo...
             .article-list
-              img(src="images/list-picture-3.png")
+              img(src="/images/list-picture-3.png")
               .picture-text-area
                 h6 L'éduquer et le comprendre
                 p Illud tamen te ese admonitum volo...
             .article-list
-              img(src="images/list-picture-4.png")
+              img(src="/images/list-picture-4.png")
               .picture-text-area
                 h6 L'éduquer et le comprendre
                 p Illud tamen te ese admonitum volo...
             .more
-              img(src="images/more.png")
+              img(src="/images/more.png")
               h2 de races
           .post.add-margin-left
             .img-area
-              img(src="images/last-news-pic-9.png")
+              img(src="/images/last-news-pic-9.png")
               .title-label
-                img(src="images/puce.png")
+                img(src="/images/puce.png")
                 h2 chroniques
               .legend Karl Lagefeld dingue d'une femelle
             .text-area.border
               p A force de les faire valser sur les podiums, à force de jouer le solitaire dopé au génie artistique et de façon ..
             .article-list
-              img(src="images/list-picture-1.png")
+              img(src="/images/list-picture-1.png")
               .picture-text-area
                 h6 L'éduquer et le comprendre
                 p Illud tamen te ese admonitum volo...
             .article-list
-              img(src="images/list-picture-2.png")
+              img(src="/images/list-picture-2.png")
               .picture-text-area
                 h6 L'éduquer et le comprendre
                 p Illud tamen te ese admonitum volo...
             .article-list
-              img(src="images/list-picture-3.png")
+              img(src="/images/list-picture-3.png")
               .picture-text-area
                 h6 L'éduquer et le comprendre
                 p Illud tamen te ese admonitum volo...
             .article-list
-              img(src="images/list-picture-4.png")
+              img(src="/images/list-picture-4.png")
               .picture-text-area
                 h6 L'éduquer et le comprendre
                 p Illud tamen te ese admonitum volo...
             .more
-              img(src="images/more.png")
+              img(src="/images/more.png")
               h2 de chroniques
     section.videos
       .block.block-55
         .block-title-area
-          img(src="images/puce.png")
+          img(src="/images/puce.png")
           .block-title videos
         .last-news-inner
           .row.small-margin-bottom
             .post
               .img-area
-                img(src="images/video-1.png")
+                img(src="/images/video-1.png")
                 .comment-block sésame ouvre toi
             .post.add-margin-left-small
               .img-area
-                img(src="images/video-2.png")
+                img(src="/images/video-2.png")
                 .comment-block sésame ouvre toi
             .post.add-margin-left-small
               .img-area
-                img(src="images/video-3.png")
+                img(src="/images/video-3.png")
                 .comment-block sésame ouvre toi
           .row.small-margin-bottom
             .post
               .img-area
-                img(src="images/video-1.png")
+                img(src="/images/video-1.png")
                 .comment-block sésame ouvre toi
             .post.add-margin-left-small
               .img-area
-                img(src="images/video-2.png")
+                img(src="/images/video-2.png")
                 .comment-block sésame ouvre toi
             .post.add-margin-left-small
               .img-area
-                img(src="images/video-3.png")
+                img(src="/images/video-3.png")
                 .comment-block sésame ouvre toi
           .more
-            img(src="images/more.png")
+            img(src="/images/more.png")
             h2 de videos
       .block.block-30.right
         .block-title-area
-          img(src="images/puce.png")
+          img(src="/images/puce.png")
           .block-title les chats dans l'histoire
         .news
           .picture 
-            img(src="images/news-picture-1.png")
+            img(src="/images/news-picture-1.png")
           .text
             .row.center
               .legend Exsistit autem hoc loco quaedam
         .news
           .picture 
-            img(src="images/news-picture-2.png")
+            img(src="/images/news-picture-2.png")
           .text
             .row.center
               .legend Exsistit autem hoc loco quaedam
         .news
           .picture 
-            img(src="images/news-picture-3.png")
+            img(src="/images/news-picture-3.png")
           .text
             .row.center
               .legend Exsistit autem hoc loco quaedam
         .news
           .picture 
-            img(src="images/news-picture-4.png")
+            img(src="/images/news-picture-4.png")
           .text
             .row.center
               .legend Exsistit autem hoc loco quaedam
         .news
           .picture 
-            img(src="images/news-picture-4.png")
+            img(src="/images/news-picture-4.png")
           .text
             .row.center
               .legend Exsistit autem hoc loco quaedam
         .news
           .picture 
-            img(src="images/news-picture-4.png")
+            img(src="/images/news-picture-4.png")
           .text
             .row.center
               .legend Exsistit autem hoc loco quaedam
 
     footer
       section.black
-        img.cat(src="images/cat-big.png")
+        img.cat(src="/images/cat-big.png")
         .block-30
-          img.logo(src="images/footer-logo.png")
+          img.logo(src="/images/footer-logo.png")
           p.margin Exsistit autem hoc loco quaedam quaestio subdifficilis, num quando amici novi, digni amicitia, veteribus sint anteponendi, ut equis vetulis teneros anteponere solemus. Indigna homine dubitatio! Non enim debent esse 
           h3 recevoir la newsletter de micetto
           .input-block
@@ -378,7 +381,7 @@ html
           a.infos(href="#") Plus de citations
         .block-30
           h3 retrouvez nous sur facebook
-          img.fb(src="images/fb_pictures.png")
+          img.fb(src="/images/fb_pictures.png")
       .red
         section
           ul
