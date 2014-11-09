@@ -331,6 +331,8 @@ ul.short-post-list > li.news-one-row {
     margin-left: 50px; }
   .post.add-margin-left-small {
     margin-left: 25px; }
+  .post.post-half {
+    width: 46%; }
   .post > .img-area {
     position: relative;
     width: 319px;
@@ -471,6 +473,18 @@ ul.short-post-list > li.news-one-row {
       background-color: #be0f23; }
     .form-area .btn.right {
       float: right; }
+
+.page-count-area {
+  float: right;
+  margin-top: 10px; }
+  .page-count-area > * {
+    display: inline-block; }
+  .page-count-area > .count {
+    background-color: #b1b1b1;
+    color: #fff;
+    padding: 13px 10px; }
+    .page-count-area > .count.selected {
+      background-color: #be0f23; }
 
 footer {
   color: white;

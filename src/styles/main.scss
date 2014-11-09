@@ -260,6 +260,7 @@ ul.short-post-list {
   display: inline-block; width: 30%;
   &.add-margin-left {margin-left: 50px;}
   &.add-margin-left-small {margin-left: 25px;}
+  &.post-half {width: 46%;}
   & > .img-area {
     position: relative;
     width: 319px;
@@ -358,6 +359,18 @@ ul.short-post-list {
     text-transform: uppercase;
     &.btn-red {background-color: #be0f23; }
     &.right {float: right;}
+  }
+}
+
+.page-count-area {
+  float: right;
+  margin-top: 10px;
+  & > * {display: inline-block;}
+  & > .count {
+    background-color: #b1b1b1;
+    color: #fff;
+    padding: 13px 10px;
+    &.selected {background-color: #be0f23;}
   }
 }
 
