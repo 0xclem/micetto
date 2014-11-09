@@ -234,7 +234,7 @@ ul.short-post-list {
       border-bottom: 1px solid #d9d9d9;
       padding-left: 5px;
       & > h6 {font-weight: 400; padding: 10px 0; &.only {padding: 20px 0;}}
-      & > p {color: darken(#b1b1b1, 20%); padding: 0 0 8px 0;}
+      & > p {color: darken(#b1b1b1, 30%); padding: 0 0 8px 0;}
     }
   }
 }
@@ -279,7 +279,7 @@ ul.short-post-list {
   & > .text-area {
     &.border{border-bottom: 1px solid #d9d9d9;}
     & > h3 {text-transform: uppercase; margin-bottom: 20px; padding: 0 10px;}
-    & > p {margin-bottom: 15px; padding: 0 10px; line-height: 1.4em; color: darken(#b1b1b1, 20%);}
+    & > p {margin-bottom: 15px; padding: 0 10px; line-height: 1.4em; color: darken(#b1b1b1, 30%);}
     & > a {text-decoration: none; float: right; color: #454646;}
   }
 }
@@ -293,6 +293,33 @@ ul.short-post-list {
     &.add-margin-top {margin-top: 15px;}
   }
 
+.article {
+  margin: 20px 0;
+  & h3 {font-size: 13px; text-transform: uppercase; font-weight: 500;}
+  & > .date-block {margin: 5px 0;}
+  & > .article-inner {
+    & > .article-part {
+      margin-bottom: 40px;
+      & > .article-img { float: left; margin-right: 20px;}
+      & > p {color: darken(#b1b1b1, 30%); padding: 0 0 8px 0; line-height: 17px; margin-bottom: 10px;}
+      & > h3 {margin-bottom: 20px;}
+      & > legend {margin: 20px 0; color: #be0f23; }  
+    }
+  }
+}
+
+.author-area {
+  line-height: 18px;
+  margin-bottom: 20px;
+  & img.profile {float: left; margin-right: 10px;}
+  & h6 {font-weight: 500; padding: 5px 0;}
+  & a {color: darken(#b1b1b1, 30%);}
+}
+
+.comment-area {
+  margin: 20px 0;
+  & p {color: darken(#b1b1b1, 30%); padding: 0 0 8px 0; line-height: 17px;}
+}
 
 footer {
   color: white;

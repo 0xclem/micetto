@@ -284,7 +284,7 @@ ul.short-post-list > li.news-simple {
       ul.short-post-list > li.news-simple > .text > h6.only {
         padding: 20px 0; }
     ul.short-post-list > li.news-simple > .text > p {
-      color: #7e7e7e;
+      color: #646464;
       padding: 0 0 8px 0; }
 
 .date-block {
@@ -355,7 +355,7 @@ ul.short-post-list > li.news-simple {
     margin-bottom: 15px;
     padding: 0 10px;
     line-height: 1.4em;
-    color: #7e7e7e; }
+    color: #646464; }
   .post > .text-area > a {
     text-decoration: none;
     float: right;
@@ -375,6 +375,49 @@ ul.short-post-list > li.news-simple {
     font-size: 14px; }
   .more.add-margin-top {
     margin-top: 15px; }
+
+.article {
+  margin: 20px 0; }
+  .article h3 {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500; }
+  .article > .date-block {
+    margin: 5px 0; }
+  .article > .article-inner > .article-part {
+    margin-bottom: 40px; }
+    .article > .article-inner > .article-part > .article-img {
+      float: left;
+      margin-right: 20px; }
+    .article > .article-inner > .article-part > p {
+      color: #646464;
+      padding: 0 0 8px 0;
+      line-height: 17px;
+      margin-bottom: 10px; }
+    .article > .article-inner > .article-part > h3 {
+      margin-bottom: 20px; }
+    .article > .article-inner > .article-part > legend {
+      margin: 20px 0;
+      color: #be0f23; }
+
+.author-area {
+  line-height: 18px;
+  margin-bottom: 20px; }
+  .author-area img.profile {
+    float: left;
+    margin-right: 10px; }
+  .author-area h6 {
+    font-weight: 500;
+    padding: 5px 0; }
+  .author-area a {
+    color: #646464; }
+
+.comment-area {
+  margin: 20px 0; }
+  .comment-area p {
+    color: #646464;
+    padding: 0 0 8px 0;
+    line-height: 17px; }
 
 footer {
   color: white;
