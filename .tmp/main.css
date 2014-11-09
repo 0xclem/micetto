@@ -233,6 +233,8 @@ section.videos > .picture-grid > .row {
 
 section.advices > .picture-grid > .row {
   margin: 15px 0; }
+section.advices .advices-list {
+  margin-bottom: 40px; }
 
 .block-title-area {
   background-color: #be0f23;
@@ -375,12 +377,14 @@ ul.short-post-list > li.news-simple {
   .more > * {
     display: inline-block; }
   .more > img {
-    margin-right: 10px;
+    margin-right: 5px;
     vertical-align: bottom; }
   .more > h2 {
     color: #be0f23;
     text-transform: uppercase;
-    font-size: 14px; }
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px; }
   .more.add-margin-top {
     margin-top: 15px; }
 
