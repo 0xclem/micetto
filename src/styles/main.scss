@@ -19,22 +19,18 @@ body {
 }
 $max-width: 100%;
 ::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #fff;
     font-family: 'Roboto';
     font-size: 12px;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #fff;
    font-family: 'Roboto';
    font-size: 12px;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #fff;
    font-family: 'Roboto';
    font-size: 12px;
 }
 :-ms-input-placeholder { /* Internet Explorer 10+ */
-   color:    #fff;
    font-family: 'Roboto';
    font-size: 12px;
 }
@@ -44,6 +40,11 @@ a {text-decoration: none;}
 // ------------------ Header --------------------
 
 header {
+  ::-webkit-input-placeholder { /* WebKit browsers */ color:    #fff; }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:    #fff;}
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */ color:    #fff; }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */ color:    #fff; }
+
   margin-top: 10px;
   & > .row {
     @include clearfix;
@@ -294,7 +295,7 @@ ul.short-post-list {
   }
 
 .article {
-  margin: 20px 0;
+  margin: 20px 0 40px 0;
   & h3 {font-size: 13px; text-transform: uppercase; font-weight: 500;}
   & > .date-block {margin: 5px 0;}
   & > .article-inner {
@@ -319,6 +320,36 @@ ul.short-post-list {
 .comment-area {
   margin: 20px 0;
   & p {color: darken(#b1b1b1, 30%); padding: 0 0 8px 0; line-height: 17px;}
+}
+
+.form-area {
+  margin: 20px 0 40px 0;
+  & input[type=text] {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 50%;
+    outline: none;
+    outline-width: 0px;
+    border-width: 1px;
+    border-color: #b1b1b1;
+  }
+  & textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 150px;
+    outline: none;
+    border-color: #b1b1b1;
+  }
+  & .btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    text-transform: uppercase;
+    &.btn-red {background-color: #be0f23; }
+    &.right {float: right;}
+  }
 }
 
 footer {
